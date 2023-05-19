@@ -1,6 +1,187 @@
-html , body{
+html,
+body {
     margin: 0;
     padding: 0;
     color: #fff;
     background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* header start */
+.header {
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 0px;
+}
+
+.header-cont {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 60px; */
+    padding: 10px 0;
+
+}
+
+.humburger-menu svg {
+    margin-left: 10px;
+
+}
+
+.header a svg {
+    margin: 6px 15px;
+}
+
+.search-input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 0 10px;
+    max-width: 80%;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.search-input .svg_color {
+    color: grey;
+
+}
+
+.search-input input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0 5px;
+    outline: none;
+}
+
+.header .header-btn {
+    background-color: #f5f5f5;
+    margin-right: 15px;
+    border: none;
+
+}
+
+.login-btn {
+    font-size: 1.1rem;
+    margin-right: 20px;
+    /* background-color: rgba(0,0,0,.1); */
+    border: none;
+}
+
+/* header end */
+
+
+/* navigation header start  */
+.navigation-menu {
+    position: sticky;
+    top: 60px;
+    min-height: 60px;
+}
+
+.nav-cont {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-link {
+    color: hsla(0, 0%, 100%, 0.9);
+    margin-right: 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 1.1rem;
+}
+
+/* navigation header end */
+
+/* slider css start */
+
+/* slider css end */
+
+/* Song section start */
+.song-section{
+margin-bottom: 40px 0;
+}
+.section-heading{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: left;
+    color: hsla(0, 0%, 100%, 0.9);
+    text-transform: capitalize;
+  
+   
+}
+.songs-container{
+display: flex;
+flex-direction: row;
+
+}
+.song-card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+   
+}
+.img-cont{
+    width: 150px;
+    height: 170px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.img-cont img{
+    width: 100%;
+    height: 100%;
+    
+}
+.song-name{
+    color: hsla(0, 0%, 100%, 0.9);
+    margin-top: 4px;
+    font-size: 16px;
+}
+
+.song-card:hover .overlay{
+    visibility:visible;
+}
+.song-card:hover .img-cont{
+    filter: brightness(.7);
+}
+.overlay {
+    /* display: none; */
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .3);
+    cursor: pointer;
+    background-image: url(https://a10.gaanacdn.com/gn_img/images/play_1621599900.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: calc(50% + 1px) 50%;
+  
+}
+
+/* Song section end */
